@@ -1,4 +1,3 @@
-import "../styles/card.css";
 
 interface DataCard {
   imageUrl: string;
@@ -9,7 +8,7 @@ interface DataCard {
 
 const CardBase = ({ imageUrl, title, description, tags }: DataCard) => {
   return (
-    <div className="max-w-xs rounded overflow-hidden shadow-lg">
+    <div className="max-w-xs rounded overflow-hidden shadow-lg flex-start ">
       <img className="w-full" src={imageUrl} alt={title} />
 
       <div className="px-6 py-4">
